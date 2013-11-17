@@ -1,6 +1,6 @@
 #ifndef _DEBUG_H_
 #define _DEBUG_H_
-
+// Debug requires uart code to be included
 #ifdef DEBUG
 #define DBG_INIT() uart_init()
 #define DBG_PUTCH(c) uart_tx((c))
