@@ -1,0 +1,82 @@
+# depslib dependency file v1.0
+1362644439 source:c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\batcheck.c
+	<stdint.h>
+	<avr/io.h>
+	"batcheck.h"
+
+1362644478 c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\batcheck.h
+
+1362081483 source:c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\lm75.c
+	"lm75.h"
+	"USI_TWI_Master.h"
+
+1362077301 c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\lm75.h
+	<stdint.h>
+
+1353622025 c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\usi_twi_master.h
+
+1378666983 source:c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\nrf905.c
+	<stdint.h>
+	<avr/io.h>
+	<avr/interrupt.h>
+	<util/delay.h>
+	"nrf905.h"
+	"spi.h"
+
+1378416707 c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\nrf905.h
+	<stdint.h>
+	<avr/io.h>
+	"spi.h"
+
+1377946292 c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\spi.h
+	<stdint.h>
+
+1378068889 source:c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\spi.c
+	<stdint.h>
+	<avr/io.h>
+	<util/delay.h>
+	"spi.h"
+
+1378063887 source:c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\uart.c
+	<avr/io.h>
+	"uart.h"
+
+1378063887 c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\uart.h
+
+1378070983 source:c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\wd_timer.c
+	<avr/interrupt.h>
+	<avr/io.h>
+	<avr/wdt.h>
+	"wd_timer.h"
+
+1378070983 c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\wd_timer.h
+	<stdint.h>
+	<avr/wdt.h>
+
+1353534591 source:c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\usi_twi_master.c
+	<avr/io.h>
+	"USI_TWI_Master.h"
+	<util/delay_basic.h>
+
+1382263425 source:c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\main.c
+	<stdint.h>
+	<avr/io.h>
+	<avr/wdt.h>
+	<util/delay.h>
+	<avr/interrupt.h>
+	<avr/sleep.h>
+	"USI_TWI_Master.h"
+	"uart.h"
+	"lm75.h"
+	"spi.h"
+	"nrf905.h"
+	"packet.h"
+	"wd_timer.h"
+	"batcheck.h"
+	"debug.h"
+
+1378669884 c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\packet.h
+	<stdint.h>
+
+1382263453 c:\documents and settings\eddie\my documents\dropbox\codeblocks\tempsensor2\debug.h
+

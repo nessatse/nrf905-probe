@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="tempsensor" />
+		<Option pch_mode="2" />
+		<Option compiler="avrgcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\tempsensor.elf" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="avrgcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DDEBUG=1" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\tempsensor.elf" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="avrgcc" />
+				<Compiler>
+					<Add option="-Os" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-mmcu=attiny2313" />
+			<Add option="-Os" />
+			<Add option="-Wall" />
+			<Add option="-std=gnu99" />
+			<Add option="-ffunction-sections" />
+			<Add option="-DF_CPU=1000000UL" />
+		</Compiler>
+		<Linker>
+			<Add option="-mmcu=attiny2313" />
+			<Add option="-Wl,-Map=$(TARGET_OUTPUT_FILE).map,--cref" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="avr-objcopy -O ihex -R .eeprom -R .eesafe $(TARGET_OUTPUT_FILE) $(TARGET_OUTPUT_FILE).hex" />
+			<Add after="avr-objcopy --no-change-warnings -j .eeprom --change-section-lma .eeprom=0 -O ihex $(TARGET_OUTPUT_FILE) $(TARGET_OUTPUT_FILE).eep.hex" />
+			<Add after='cmd /c &quot;avr-objdump -h -S $(TARGET_OUTPUT_FILE) &gt; $(TARGET_OUTPUT_FILE).lss&quot;' />
+			<Add after="avr-size  -C --mcu=attiny2313 $(TARGET_OUTPUT_FILE)" />
+			<Add after="avrdude -p t2313 -b 115200 -c avr910 -P com4 -U  flash:w:$(TARGET_OUTPUT_FILE).hex" />
+		</ExtraCommands>
+		<Unit filename="USI_TWI_Master.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="USI_TWI_Master.h" />
+		<Unit filename="asmdelay.h" />
+		<Unit filename="batcheck.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="batcheck.h" />
+		<Unit filename="debug.h" />
+		<Unit filename="lm75.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lm75.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nrf905.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nrf905.h" />
+		<Unit filename="packet.h" />
+		<Unit filename="spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="spi.h" />
+		<Unit filename="uart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="uart.h" />
+		<Unit filename="version.h" />
+		<Unit filename="wd_timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="wd_timer.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" do_auto_increment="0" ask_to_increment="0" language="C" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log generate_log="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+			</AutoVersioning>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
