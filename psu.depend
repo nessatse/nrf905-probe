@@ -1,0 +1,72 @@
+# depslib dependency file v1.0
+1370120927 source:c:\documents and settings\eddie\my documents\dropbox\codeblocks\psu\lcdasm.s
+	"defines.h"
+	"asmdelay.h"
+	<avr/io.h>
+
+1333993573 
+
+1370298766 c:\documents and settings\eddie\my documents\dropbox\codeblocks\psu\defines.h
+	<avr/io.h>
+
+1321560008 c:\documents and settings\eddie\my documents\dropbox\codeblocks\psu\asmdelay.h
+
+1370121526 source:c:\documents and settings\eddie\my documents\dropbox\codeblocks\psu\psu.c
+	"defines.h"
+	"lcd.h"
+	<util/delay.h>
+	<avr/sleep.h>
+	<avr/interrupt.h>
+	<stdlib.h>
+	"version.h"
+
+1370121516 c:\documents and settings\eddie\my documents\dropbox\codeblocks\psu\lcd.h
+	<avr/pgmspace.h>
+
+1321713192 ace.h>
+
+1334174175 source:c:\documents and settings\eddie\my documents\dropbox\codeblocks\psu\lcd.c
+	"defines.h"
+	<stdbool.h>
+	<stdint.h>
+	<stdio.h>
+	<avr/io.h>
+	<avr/pgmspace.h>
+	<util/delay.h>
+	"lcd.h"
+
+1334170282 y.h>
+
+1334174175 source:/home/eddie/Dropbox/codeblocks/psu/lcd.c
+	"defines.h"
+	<stdbool.h>
+	<stdint.h>
+	<stdio.h>
+	<avr/io.h>
+	<avr/pgmspace.h>
+	<util/delay.h>
+	"lcd.h"
+
+1333990009 /home/eddie/Dropbox/codeblocks/psu/defines.h
+	<avr/io.h>
+
+1334174226 /home/eddie/Dropbox/codeblocks/psu/lcd.h
+	<avr/pgmspace.h>
+
+1322171352 source:/home/eddie/Dropbox/codeblocks/psu/lcdasm.S
+	"defines.h"
+	"asmdelay.h"
+	<avr/io.h>
+
+1321560008 /home/eddie/Dropbox/codeblocks/psu/asmdelay.h
+
+1334172636 source:/home/eddie/Dropbox/codeblocks/psu/psu.c
+	"defines.h"
+	"lcd.h"
+	<util/delay.h>
+	<avr/sleep.h>
+	<avr/interrupt.h>
+	<stdlib.h>
+
+1370104941 c:\documents and settings\eddie\my documents\dropbox\codeblocks\psu\version.h
+
